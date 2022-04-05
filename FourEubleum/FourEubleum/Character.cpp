@@ -16,6 +16,8 @@ Character::Character(string n)
 	setAttack(10);
 	setDefense(5);
 	setInventory(vector<Item>());
+	Potion p = Potion();
+	addItem(p);
 }
 
 void Character::addItem(Item a)

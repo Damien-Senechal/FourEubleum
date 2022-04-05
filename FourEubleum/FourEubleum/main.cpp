@@ -1,5 +1,6 @@
 #include "MapData.h"
 #include "EnemyData.h"
+#include "ItemData.h"
 
 int MyGetch()
 {
@@ -8,7 +9,7 @@ int MyGetch()
 #endif
 }
 
-void Battle(Character& p)
+/*void Battle(Character& p)
 {
 	system("CLS");
 	Enemy e;
@@ -57,7 +58,7 @@ void Battle(Character& p)
 	}
 	cout << "Vous avez gagné !" << endl;
 	system("pause");
-}
+}*/
 
 int main() 
 {
@@ -127,9 +128,36 @@ int main()
 							e.setHealth(e.getHealth() - (player.getAttack() + player.getWeaponEquipped().getAttack()));
 							player.setHealth(player.getHealth() - e.getAttack());
 							cout << "Vous avez attaqué" << endl;
+							system("pause");
+						}
+						else if (choice == 2) {
+							int attack = e.getAttack() - player.getDefense();
+							if (attack > 0) {
+								player.setHealth(player.getHealth() - attack);
+							}
+							cout << "Vous vous etes defendu" << endl;
+							system("pause");
+						}
+						else if (choice == 3) {
+							for (size_t i = 0; i < player.getInventory().size(); i++)
+							{
+								if (player.getInventory()[i].getName() == "Potion") {
+									player.setHealth(player.getHealth() + 70);
+									player.removeItem(p);
+									cout << "Vous vous etes soignez" << endl;
+								}
+								else {
+									cout << "Vous n'avez pas de potion" << endl;
+								}
+							}
+							if (player.getInventory().size() == 0) {
+								cout << "Votre Inventaire est vide" << endl;
+							}
+							system("pause");
 						}
 						else {
 							cout << "Error" << endl;
+							system("pause");
 						}
 						break;
 					default:

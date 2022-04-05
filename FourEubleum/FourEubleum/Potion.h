@@ -4,16 +4,12 @@
 class Potion : public Item
 {
 private:
-	string name;
 	int hp;
-	bool isEquipped;
 public:
-	inline const string& getName() const { return this->name; }
-	inline const int& getHp() const { return this->hp; }
-	inline const bool& getIsEquipped() const { return this->isEquipped; }
+	Potion();
 
-	void setName(string n) { this->name = n; }
+	inline const int& getHp() const { return this->hp; }
+
 	void setHp(int h) { this->hp = h; }
-	void setIsEquipped(bool i) { this->isEquipped = i; }
 };
 

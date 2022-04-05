@@ -2,7 +2,7 @@
 
 Item::Item()
 {
-	setName("None");
+	setName("Item");
 }
 
 Item::Item(string n)
