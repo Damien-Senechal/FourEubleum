@@ -1,0 +1,17 @@
+﻿  Grid.cpp
+C:\Users\Utilisateur\Documents\GitHub\FourEubleum\FourEubleum\FourEubleum\Grid.cpp(14,12): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
+C:\Users\Utilisateur\Documents\GitHub\FourEubleum\FourEubleum\FourEubleum\Grid.cpp(22,47): warning C4267: 'argument' : conversion de 'size_t' en 'int', perte possible de données
+C:\Users\Utilisateur\Documents\GitHub\FourEubleum\FourEubleum\FourEubleum\Grid.cpp(26,48): warning C4267: 'argument' : conversion de 'size_t' en 'int', perte possible de données
+C:\Users\Utilisateur\Documents\GitHub\FourEubleum\FourEubleum\FourEubleum\Grid.cpp(29,48): warning C4267: 'argument' : conversion de 'size_t' en 'int', perte possible de données
+C:\Users\Utilisateur\Documents\GitHub\FourEubleum\FourEubleum\FourEubleum\Grid.cpp(45,12): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
+C:\Users\Utilisateur\Documents\GitHub\FourEubleum\FourEubleum\FourEubleum\Grid.cpp(53,47): warning C4267: 'argument' : conversion de 'size_t' en 'int', perte possible de données
+C:\Users\Utilisateur\Documents\GitHub\FourEubleum\FourEubleum\FourEubleum\Grid.cpp(57,48): warning C4267: 'argument' : conversion de 'size_t' en 'int', perte possible de données
+C:\Users\Utilisateur\Documents\GitHub\FourEubleum\FourEubleum\FourEubleum\Grid.cpp(60,48): warning C4267: 'argument' : conversion de 'size_t' en 'int', perte possible de données
+C:\Users\Utilisateur\Documents\GitHub\FourEubleum\FourEubleum\FourEubleum\Grid.cpp(63,48): warning C4267: 'argument' : conversion de 'size_t' en 'int', perte possible de données
+C:\Users\Utilisateur\Documents\GitHub\FourEubleum\FourEubleum\FourEubleum\Grid.cpp(144,12): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
+C:\Users\Utilisateur\Documents\GitHub\FourEubleum\FourEubleum\FourEubleum\Grid.cpp(152,47): warning C4267: 'argument' : conversion de 'size_t' en 'int', perte possible de données
+C:\Users\Utilisateur\Documents\GitHub\FourEubleum\FourEubleum\FourEubleum\Grid.cpp(156,48): warning C4267: 'argument' : conversion de 'size_t' en 'int', perte possible de données
+C:\Users\Utilisateur\Documents\GitHub\FourEubleum\FourEubleum\FourEubleum\Grid.cpp(159,48): warning C4267: 'argument' : conversion de 'size_t' en 'int', perte possible de données
+C:\Users\Utilisateur\Documents\GitHub\FourEubleum\FourEubleum\FourEubleum\Grid.cpp(162,48): warning C4267: 'argument' : conversion de 'size_t' en 'int', perte possible de données
+C:\Users\Utilisateur\Documents\GitHub\FourEubleum\FourEubleum\FourEubleum\Grid.cpp(137): warning C4715: 'Grid::Move' : les chemins de contrôle ne retournent pas tous une valeur
+  FourEubleum.vcxproj -> C:\Users\Utilisateur\Documents\GitHub\FourEubleum\FourEubleum\x64\Debug\FourEubleum.exe
