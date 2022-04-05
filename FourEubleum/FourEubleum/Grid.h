@@ -9,7 +9,7 @@ protected:
 	int numberEnemy;
 public:
 	Grid();
-	Grid(int x, int y, int px, int py);
+	//Grid(int x, int y, int px, int py);
 	Grid(vector<vector<int>> data);
 
 	inline const vector<vector<Point>>& getValues() const { return this->values; }

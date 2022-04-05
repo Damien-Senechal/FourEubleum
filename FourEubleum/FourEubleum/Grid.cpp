@@ -7,7 +7,7 @@ Grid::Grid()
 	this->numberEnemy = 5;
 }
 
-Grid::Grid(int x, int y, int px, int py)
+/*Grid::Grid(int x, int y, int px, int py)
 {
 	setNumberEnemy(5);
 	int number;
@@ -36,7 +36,7 @@ Grid::Grid(int x, int y, int px, int py)
 			}
 		}
 	}
-}
+}*/
 
 Grid::Grid(vector<vector<int>> data)
 {

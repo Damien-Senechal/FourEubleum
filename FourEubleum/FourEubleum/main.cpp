@@ -49,26 +49,34 @@ int main()
 					switch (touche)
 					{
 					case 'q':
-						if (Level.Move(2)) {
-						}
+						Level.Move(2);
 						break;
 					case 'd':
-						if (Level.Move(1)) {
-						}
+						Level.Move(1);
 						break;
 					case 'z':
-						if (Level.Move(0)) {
-						}
+						Level.Move(0);
 						break;
 					case 's':
-						if (Level.Move(3)) {
-						}
+						Level.Move(3);
 					default:
 						break;
 					}
 					system("CLS");
-					if (Level.getCursor().getVal() == 'D' && game.getActualLevel() == 1) {
+					if (Level.getCursor().getVal() == 'D' && game.getActualLevel() == 1)
+					{
+						game.setActualLevel(game.getActualLevel()+1);
 						Level.changeMap(Level2Data);
+					}
+					else if (Level.getCursor().getVal() == 'D' && game.getActualLevel() == 2) 
+					{
+						game.setActualLevel(game.getActualLevel() + 1);
+						Level.changeMap(Level3Data);
+					}
+					else if (Level.getCursor().getVal() == 'D' && game.getActualLevel() == 3)
+					{
+						game.setActualLevel(game.getActualLevel() + 1);
+						Level.changeMap(Level4Data);
 					}
 					cout << Level << endl;
 					SetConsoleTextAttribute(console, 15);
