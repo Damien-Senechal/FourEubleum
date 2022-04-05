@@ -1,0 +1,5 @@
+Dans le dossier IA il y a une ia que j'avais preparer a integrer au jeu malheuresement je n'ai pas eu le temps de le faire,
+je la partage quand meme si cela peut etre interessant.
+
+Je me suis aidé de ce code pour la faire :
+https://www.bogotobogo.com/Algorithms/path_finding_algorithm.php
