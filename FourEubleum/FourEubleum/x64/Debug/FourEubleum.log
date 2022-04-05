@@ -1,5 +1,2 @@
-﻿  Game.cpp
-  main.cpp
-  Génération de code en cours...
-C:\Users\Utilisateur\Documents\GitHub\FourEubleum\FourEubleum\FourEubleum\Game.cpp(60): warning C4715: 'Game::getStateName' : les chemins de contrôle ne retournent pas tous une valeur
+﻿  main.cpp
   FourEubleum.vcxproj -> C:\Users\Utilisateur\Documents\GitHub\FourEubleum\FourEubleum\x64\Debug\FourEubleum.exe

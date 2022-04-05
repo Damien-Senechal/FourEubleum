@@ -26,7 +26,7 @@ private:
 public:
 	void enter(Game* game) {}
 	void execute(Game* game);
-	void exit(Game* game) {}
+	void exit(Game* game);
 	static GameState& getInstance();
 };
 
@@ -38,9 +38,9 @@ private:
 	Battlefield& operator=(const Battlefield& other);
 
 public:
-	void enter(Game* game) {}
+	void enter(Game* game);
 	void execute(Game* game);
-	void exit(Game* game) {}
+	void exit(Game* game);
 	static GameState& getInstance();
 };
 

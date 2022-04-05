@@ -171,6 +171,11 @@ void Grid::changeMap(vector<vector<int>> data)
 	}
 }
 
+void Grid::removeEnemy(int x, int y)
+{
+	this->values[x][y].setEnemy(false);
+}
+
 ostream& operator<<(ostream& os, Grid const& p) {
 	for (size_t i = 0; i < p.getValues()[0].size(); i++)
 	{

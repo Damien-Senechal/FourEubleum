@@ -13,7 +13,12 @@ GameState& Start::getInstance()
 
 void Exploration::execute(Game* game)
 {
-	game->setState(Exploration::getInstance());
+	game->setState(Battlefield::getInstance());
+}
+
+void Exploration::exit(Game* game)
+{
+	system("CLS");
 }
 
 GameState& Exploration::getInstance()
@@ -22,9 +27,19 @@ GameState& Exploration::getInstance()
 	return singleton;
 }
 
+void Battlefield::enter(Game* game)
+{
+	system("CLS");
+}
+
 void Battlefield::execute(Game* game)
 {
 	game->setState(Exploration::getInstance());
+}
+
+void Battlefield::exit(Game* game)
+{
+	system("CLS");
 }
 
 GameState& Battlefield::getInstance()
@@ -35,7 +50,7 @@ GameState& Battlefield::getInstance()
 
 void Pause::execute(Game* game)
 {
-	game->setState(Exploration::getInstance());
+	game->setState(Exit::getInstance());
 }
 
 GameState& Pause::getInstance()

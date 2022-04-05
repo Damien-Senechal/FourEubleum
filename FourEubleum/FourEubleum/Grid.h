@@ -22,6 +22,7 @@ public:
 
 	bool Move(int direction);
 	void changeMap(vector<vector<int>> data);
+	void removeEnemy(int x, int y);
 
 	friend ostream& operator<<(ostream& os, Grid const& p);
 };

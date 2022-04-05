@@ -15,6 +15,13 @@ void Game::execute()
 	}
 }
 
+void Game::setExploration()
+{
+	currentState->exit(this);
+	currentState = &Exploration::getInstance();
+	currentState->enter(this);
+}
+
 void Game::setState(GameState& newState)
 {
 	currentState->exit(this);
@@ -32,29 +39,81 @@ bool Game::finish()
 	}
 }
 
-void Game::print()
+void Game::Battle(Character& p)
 {
+	/*system("CLS");
+	Enemy e;
+	int number;
+	int choice;
+	number = rand() % 2 + 1;
+	if (number == 1) {
+		e = Soldier;
+	}
+	else if (number == 2) {
+		e = Monster;
+	}
+	while (e.getHealth() > 0) {
+		cout << "Battle against : " << e.getName() << endl;
+		cout << "Enemy Health : " << e.getHealth() << endl;
+		cout << "1-Attack" << endl;
+		cout << "2-Defend" << endl;
+		cout << "3-Potion" << endl;
+		cin >> choice;
+		if (choice == 1) {
+			e.setHealth(e.getHealth() - (p.getAttack() + p.getWeaponEquipped().getAttack()));
+			p.setHealth(p.getHealth() - e.getAttack());
+			cout << "Vous avez attaqué" << endl;
+		}
+		else if (choice == 2) {
+			int attack = e.getAttack() - p.getDefense();
+			if (attack > 0) {
+				p.setHealth(p.getHealth() - attack);
+			}
+			cout << "Vous vous etes defendu" << endl;
+		}
+		else if (choice == 3) {
+			for (size_t i = 0; i < p.getInventory().size(); i++)
+			{
+				if (p.getInventory()[i].getName() == "Potion") {
+					p.setHealth(p.getHealth() + 70);
+				}
+				else {
+					cout << "Vous n'avez pas de potion" << endl;
+				}
+			}
+		}
+		else {
+			cout << "Error" << endl;
+		}
+	}
+	cout << "Vous avez gagné !" << endl;
+	system("pause");*/
 }
 
 string Game::getStateName()
 {
 	if (currentState == &Start::getInstance()) {
-		return "Start";
+		this->stateName = "Start";
 	}
 	else if (currentState == &Exploration::getInstance())
 	{
-		return "Exploration";
+		this->stateName = "Exploration";
 	}
 	else if (currentState == &Battlefield::getInstance())
 	{
-		return "Battlefield";
+		this->stateName = "Battlefield";
 	}
 	else if (currentState == &Pause::getInstance())
 	{
-		return "Pause";
+		this->stateName = "Pause";
 	}
 	else if (currentState == &Exit::getInstance())
 	{
-		return "Exit";
+		this->stateName = "Exit";
 	}
+	else {
+		this->stateName = "None";
+	}
+
+	return this->stateName;
 }
